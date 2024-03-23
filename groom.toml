@@ -1,0 +1,21 @@
+name = "demp"
+
+[variables]
+version = "0.0.1"
+
+[task.run]
+commands = [
+    "go run example/example1.go",
+]
+
+[task.test]
+environment = [ "TESTS=1" ]
+command = "go test -v ./..."
+depends = [
+    "format"
+]
+
+[task.format]
+command = "go fmt ./..."
+
+
