@@ -8,7 +8,7 @@ Go templates use `{{ }}` as the template delimeter.
 
 But it might not be the best choice for a end-user facing templating language.
 
-Meaning
+### Meaning
 
 ```toml
 someVar = "$pwd"
@@ -26,7 +26,7 @@ Which takes 2 arguments.
 - `template`
     The template string
 - `variables`
-    The variables to the substituted.
+    The variables to be substituted.
 
 It returns the resolved template string.
 
